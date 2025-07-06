@@ -2,7 +2,7 @@ import { collection, deleteDoc, doc, getDocs } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, FlatList, Text, TouchableOpacity, View } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
-import { db } from '@/app/firebaseConfig';
+import { db } from '../../constants/firebaseConfig';
 
 export default function AdminRidesScreen() {
   const [rides, setRides] = useState([]);

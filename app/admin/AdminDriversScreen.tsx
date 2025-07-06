@@ -2,7 +2,8 @@ import { collection, doc, getDocs, updateDoc } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
-import { db } from '@/app/firebaseConfig';
+import { db } from '../../constants/firebaseConfig';
+
 
 export default function AdminDriversScreen() {
   const [drivers, setDrivers] = useState([]);

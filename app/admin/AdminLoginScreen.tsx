@@ -2,7 +2,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
-import { auth } from '@/app/firebaseConfig';
+import { auth } from '../../constants/firebaseConfig';
 
 const ADMIN_EMAIL = 'admin@skooty.com'; // Change to your admin email
 
